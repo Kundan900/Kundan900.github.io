@@ -87,10 +87,10 @@ This isn't entirely necessary, but it's considered best practice. Some OpenGL ES
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Play creative mode Minecraft right from your browser!">
 		<meta name="keywords" content="Khan Academy, Programs, Search">
-		<meta property="og:title" content="MineKhan"/>
+		<meta property="og:title" content="KuCraft"/>
 		<meta property="og:description" content="Play creative mode Minecraft right from your browser!"/>
 		<meta property="og:image" content="https://www.khanacademy.org/computer-programming/minekhan/5647155001376768/5308848032661504.png"/>
-		<title>MineKhan</title>
+		<title>KuCraft</title>
 		<!-- <link id="vtfont" href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> -->
 		<link rel="preload" href="https://willard.fun/fonts/VT323.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="shortcut icon" type="image/ico" href="https://willard.fun/assets/minekhan.ico">
@@ -1975,13 +1975,13 @@ async function MineKhan() {
 	let playerDistances = []
 	let currentUser = { username: "Player" }
 	async function loggedIn() {
-		let exists = await fetch("https://willard.fun/profile").then(res => res.text()).catch(() => "401")
+		let exists = await fetch("").then(res => res.text()).catch(() => "401")
 		if (!exists || exists === "401") {
 			if (location.href.startsWith("https://willard.fun")) {
-				alert("You're not logged in. Head over to https://willard.fun/login to login or register before connecting to the server.")
+				alert("Sus.")
 			}
 			else {
-				alert("Multiplayer is currently only available on https://willard.fun/login => https://willard.fun/minekhan")
+				alert("Not Working ATM")
 			}
 			return false
 		}
