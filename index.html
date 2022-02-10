@@ -1945,7 +1945,7 @@ async function MineKhan() {
 	commands.set("ban", args => {
 		let username = args.join(" ")
 		if (!username) {
-			chat(`Please provide a username. Like /ban Willard`)
+			chat(`Please provide a username. Like /ban ku`)
 			return
 		}
 		if (!window.ban) {
@@ -3125,7 +3125,7 @@ async function MineKhan() {
 		Button.add(width / 2, height / 2 + 35, 400, 40, "Multiplayer", "main menu", () => {
 			initMultiplayerMenu()
 			changeScene("multiplayer menu")
-		}, () => !location.href.startsWith("https://willard.fun"), "Please visit https://willard.fun/login to enjoy multiplayer.")
+		}, () => !location.href.startsWith("https://willard.fun"), "Not Working ATM.")
 		Button.add(width / 2, height / 2 + 90, 400, 40, "Options", "main menu", () => changeScene("options"))
 
 		// Creation menu buttons
